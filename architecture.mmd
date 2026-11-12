@@ -35,3 +35,8 @@ flowchart LR
   API --> Audit
   Evidence -. synthetic prototype only .-> AI
   Review -. separate approval required .-> Writer
+
+  classDef current fill:#e8f1e9,stroke:#496b56,color:#173222;
+  classDef gated fill:#fff4dc,stroke:#9c7430,color:#422f0a;
+  class Web,API,Store,Review,Audit,Evidence,Demo current;
+  class AI,Writer,School,Mail,Calendar,Import,Adapters gated;
