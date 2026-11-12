@@ -53,7 +53,11 @@ See [Architecture](docs/architecture.md) for the detailed explanation and diagra
 
 ## Product demonstration
 
-No public interactive demo is available. The hosted application has not passed its staging security gate, and the available local screenshot still carries the internal engineering brand. This showcase therefore uses a sanitized architecture diagram rather than presenting an outdated screen as the current product. The private project retains an actual local screenshot of a synthetic event-readiness workflow for review.
+This is an actual interface capture from a local synthetic-data demo. It shows an event-readiness checklist for a fictional field trip; it is not a live service or a claim that the example came from a real family.
+
+![Local synthetic demo showing event readiness for a fictional field trip](assets/synthetic-readiness-screen.jpg)
+
+The screenshot predates the dacodac. product branding and still displays the internal engineering name, FamilyOps. No interactive public demo is available because the hosted application has not passed its staging security gate.
 
 ## AI status
 
