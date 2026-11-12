@@ -1,13 +1,13 @@
 flowchart LR
   subgraph Inputs[Authorized family information]
-    Mail[Email and notifications]
-    Calendar[Existing calendar feeds]
-    School[School and activity sources]
-    Import[Parent-supplied files]
+    Mail[Email and notifications<br/>provider path unverified]
+    Calendar[Existing calendar feeds<br/>provider path unverified]
+    School[School and activity sources<br/>planned or account-dependent]
+    Import[Parent-supplied files<br/>authorized access required]
   end
 
   subgraph Intake[Source boundary]
-    Adapters[Provider adapters and imports]
+    Adapters[Provider adapters and imports<br/>live coverage unverified]
     Evidence[Source records and evidence]
   end
 
@@ -19,14 +19,16 @@ flowchart LR
     Audit[Attribution and audit history]
   end
 
+  Demo[Synthetic/local demo records]
   AI[AI research prototypes\nnot enabled in production]
   Writer[Approved calendar output\nseparately gated]
 
-  Mail --> Adapters
-  Calendar --> Adapters
+  Mail -. unverified provider path .-> Adapters
+  Calendar -. unverified provider path .-> Adapters
   School -. planned or account-dependent .-> Adapters
-  Import --> Adapters
-  Adapters --> Evidence --> API
+  Import -. authorization-dependent .-> Adapters
+  Demo --> Evidence
+  Evidence --> API
   Web <--> API
   API <--> Store
   API --> Review
