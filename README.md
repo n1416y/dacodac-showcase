@@ -27,7 +27,7 @@ The local application and its automated tests cover a meaningful set of family-p
 - The normalized domain separates source records, family items, evidence, review decisions, tasks, and audit history.
 - Review, task ownership, preparation checklists, event readiness, conflict display, and source attribution are represented in working application flows.
 - PostgreSQL migrations, tenant boundaries, runtime-role checks, and row-level-security behavior have been exercised against a disposable local PostgreSQL instance.
-- The latest recorded backend run passed 1,069 tests with no failures or skips; frontend type and production-build checks passed.
+- The latest recorded backend run, dated November 12, 2026, passed 1,069 tests with no failures or skips; frontend type and production-build checks passed. The earlier run had 1,054 passes and 15 PostgreSQL-dependent skips. The later run used a disposable local PostgreSQL 16.15 instance with TLS; neither result is hosted or production acceptance. See [the sanitized test evidence summary](docs/test-evidence-summary.md).
 
 These are local engineering results. They do not establish live provider acceptance, hosted staging acceptance, production reliability, or user adoption.
 
@@ -47,7 +47,7 @@ These are local engineering results. They do not establish live provider accepta
 
 The web application provides the family-facing review and planning experience. A Python API applies workspace membership and authorization rules, coordinates source adapters, and persists normalized items and evidence in a PostgreSQL-compatible data model. Source-specific adapters are kept separate so that access, permissions, and coverage can be verified independently.
 
-The system is designed to preserve where information came from, reconcile duplicates without silently merging conflicting facts, and keep consequential changes behind human review. The architecture diagram distinguishes current application boundaries from future or disabled capabilities.
+The system is designed to preserve where information came from, reconcile duplicates without silently merging conflicting facts, and keep consequential changes behind human review. The architecture diagram distinguishes the synthetic/local application path from external provider paths that are still unverified or planned. Email and calendar inputs are not represented as live connections.
 
 See [Architecture](docs/architecture.md) for the detailed explanation and diagram.
 
@@ -80,7 +80,7 @@ Production AI, real-family enrollment, child accounts, trusted-adult access, aut
 
 ## Repository scope
 
-This is a fresh, curated showcase with independent Git history. It intentionally contains no application source, deployment templates, infrastructure identifiers, credentials, private databases, customer information, internal evaluation corpora, or historical private repository history. No open-source license has been applied.
+This is a fresh, curated showcase with independent Git history. It intentionally contains no application source, deployment templates, infrastructure identifiers, credentials, private databases, customer information, internal evaluation corpora, or historical private repository history. No open-source license has been applied. The LinkedIn draft is in [linkedin-post.md](linkedin-post.md); do not post it until the repository is public.
 
 ## About this showcase
 
