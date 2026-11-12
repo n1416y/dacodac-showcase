@@ -1,0 +1,35 @@
+flowchart LR
+  subgraph Inputs[Authorized family information]
+    Mail[Email and notifications]
+    Calendar[Existing calendar feeds]
+    School[School and activity sources]
+    Import[Parent-supplied files]
+  end
+
+  subgraph Intake[Source boundary]
+    Adapters[Provider adapters and imports]
+    Evidence[Source records and evidence]
+  end
+
+  subgraph Core[Family workspace]
+    Web[Next.js family interface]
+    API[FastAPI application]
+    Store[(PostgreSQL-compatible data model)]
+    Review[Review, tasks, decisions, conflicts]
+    Audit[Attribution and audit history]
+  end
+
+  AI[AI research prototypes\nnot enabled in production]
+  Writer[Approved calendar output\nseparately gated]
+
+  Mail --> Adapters
+  Calendar --> Adapters
+  School -. planned or account-dependent .-> Adapters
+  Import --> Adapters
+  Adapters --> Evidence --> API
+  Web <--> API
+  API <--> Store
+  API --> Review
+  API --> Audit
+  Evidence -. synthetic prototype only .-> AI
+  Review -. separate approval required .-> Writer
