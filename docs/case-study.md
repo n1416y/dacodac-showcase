@@ -47,7 +47,7 @@ These examples show why deployment status is tracked separately from implementat
 
 ## Verification snapshot
 
-The latest local checkpoint recorded 1,069 backend tests passed, no failures, and no skipped tests, including PostgreSQL-dependent coverage. Frontend type checking and production build passed. Container smoke checks, image secret scans, CloudFormation linting/Guard, and read-only AWS template validation also passed.
+The latest recorded local checkpoint, dated November 12, 2026, passed 1,069 backend tests with no failures or skips, including PostgreSQL-dependent coverage against disposable local PostgreSQL 16.15 with TLS. The earlier run had 1,054 passes and 15 PostgreSQL-dependent skips because its database environment was absent; the later run supersedes that count for the full suite without changing the historical record. The latest run recorded 43 warnings, described in the [sanitized test evidence summary](test-evidence-summary.md). Frontend type checking and production build passed. Container smoke checks, image secret scans, CloudFormation linting/Guard, and read-only AWS template validation also passed.
 
 The remaining High image findings, unverified live provider access, hosted backup/restore acceptance, and undelivered alarm test mean these results must not be presented as production readiness.
 
