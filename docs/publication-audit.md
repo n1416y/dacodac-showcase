@@ -1,8 +1,8 @@
-# Private showcase publication audit
+# Historical prepublication audit — private showcase
 
-**Review date:** November 12, 2026  
+**Snapshot date:** November 12, 2026  
 **Intended destination:** a new private GitHub repository named `dacodac-showcase`  
-**Public release:** not approved; stop for owner review before changing repository visibility.
+**Status:** Historical snapshot only. Public release was not approved at the time of this audit. Subsequent edits require a fresh review; this document does not certify the current files or approve a visibility change.
 
 ## Included files
 
@@ -30,4 +30,4 @@ No open-source license or third-party code has been included. The included scree
 - Manual screenshot review; the visible event and task names are synthetic.
 - No license was applied. Public release still requires owner approval.
 
-This audit describes the private release candidate only. Re-run the review after any content change and before switching repository visibility to public.
+This document records only the original November 12 prepublication snapshot. A fresh content and secret review is required after later edits and before switching repository visibility to public. No approval to change repository visibility is recorded here.
