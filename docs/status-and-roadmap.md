@@ -1,6 +1,6 @@
 # Engineering status and roadmap
 
-Status reflects the latest verified local engineering checkpoint dated November 12, 2026. It does not imply that an AWS application environment is deployed or that any real-family provider account has been connected.
+Status reflects the latest recorded local engineering checkpoint dated November 12, 2026. Email/calendar provider paths and other real-family connections remain unverified; the checkpoint does not imply an AWS application environment is deployed or a real-family provider account has been connected. The test count and context are in the [sanitized evidence summary](test-evidence-summary.md).
 
 ## Implemented and locally tested
 
