@@ -39,7 +39,7 @@ These are local engineering results. They do not establish live provider accepta
 | Database tenant isolation | Tested locally with PostgreSQL; hosted acceptance remains pending |
 | Source adapters | Partial; provider access varies and real family accounts have not been validated |
 | AI prioritization and disruption mitigation | Research/prototype work only; production AI is disabled |
-| AWS application staging | Not deployed; blocked pending resolution or explicit acceptance of remaining container security findings |
+| AWS application staging | <!-- DACODAC_AUTO_README_BEGIN --> Not deployed; limited risk exception accepted for fictional staging; initial-write authorization pending. <!-- DACODAC_AUTO_README_END --> |
 | Real-family enrollment | Closed |
 | Public production release | Not authorized |
 

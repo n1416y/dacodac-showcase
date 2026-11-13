@@ -5,16 +5,16 @@
 
 ## Latest recorded backend run
 
-- Result: PASS
-- Backend tests: 1,069 passed, 0 failed, 0 skipped
-- Additional subtests: 14 passed
-- Warnings: 43; recorded as Starlette/httpx `TestClient` and Alembic `path_separator` deprecations
-- Duration: 48.21 seconds
-- Database: disposable local PostgreSQL 16.15, loopback-only, TLS required
-- Database setup: migrations applied; the runtime role was verified as a non-superuser without `BYPASSRLS`; the tenant signing key was seeded; RLS guard and runtime TLS checks passed
-- Cleanup: disposable database container and network, temporary credential file, and test certificate were removed
+<!-- DACODAC_AUTO_TESTS_BEGIN -->
+**Evidence date:** 2026-11-12
 
-The final full-suite attempt configured PostgreSQL fixtures through the disposable database administrator URL while retaining explicit tests of the restricted application runtime role. All 1,069 tests passed. This demonstrates local test coverage under that harness; it does not substitute for hosted RDS, deployment, restore, alert-delivery, or production acceptance.
+**Result:** PASS — 1,069 passed, 0 failed, 0 skipped.
+
+**Additional checks:** 14 subtests passed; 2 deprecation warnings; 48.21 seconds.
+
+**Database and scope:** Disposable local PostgreSQL with TLS; tenant and RLS guards checked. This is local synthetic-data engineering evidence, not hosted staging or production acceptance.
+<!-- DACODAC_AUTO_TESTS_END -->
+
 
 ## Earlier run and reconciliation
 
@@ -24,6 +24,6 @@ The skipped cases covered PostgreSQL runtime-role and RLS behavior, tenant conte
 
 ## Other local checks
 
-The same checkpoint recorded frontend type checking and production build as passing, alongside container smoke checks, image secret scans, CloudFormation lint/Guard, and read-only AWS template validation. These checks do not establish that AWS application resources were deployed. The remaining container OS High findings keep application staging at NO-GO unless remediated or separately accepted within the approved fictional-staging scope.
+The same checkpoint recorded frontend type checking and production build as passing, alongside container smoke checks, image secret scans, CloudFormation lint/Guard, and read-only AWS template validation. These checks do not establish that AWS application resources were deployed. The owner has accepted a limited container-risk exception for the fictional staging pilot only. No application resources are deployed; a fresh initial-write authorization is still pending. This is not remediation or production approval.
 
 This summary is sanitized from the versioned engineering checkpoint. It intentionally omits local paths, credentials, account identifiers, infrastructure resource identifiers, and raw test logs.

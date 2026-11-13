@@ -1,6 +1,8 @@
 # Engineering status and roadmap
 
-Status reflects the latest recorded local engineering checkpoint dated November 12, 2026. Email/calendar provider paths and other real-family connections remain unverified; the checkpoint does not imply an AWS application environment is deployed or a real-family provider account has been connected. The test count and context are in the [sanitized evidence summary](test-evidence-summary.md).
+<!-- DACODAC_AUTO_STATUS_BEGIN -->
+**As of 2026-11-13:** The owner accepted a limited container-risk exception for the fictional staging pilot. No application AWS resources are deployed. Review the consolidated initial-write authorization package.
+<!-- DACODAC_AUTO_STATUS_END -->
 
 ## Implemented and locally tested
 
@@ -24,12 +26,13 @@ Status reflects the latest recorded local engineering checkpoint dated November 
 
 ## Planned
 
-- Resolve remaining container vulnerability findings and refresh image scans.
-- Complete approved, restricted AWS application staging only after the security and owner decision gates are satisfied.
-- Run hosted database isolation, backup/restore, rollback, session, alert-delivery, and disabled-route acceptance.
-- Verify each school and activity integration against the family's actual authorized access method before claiming support.
-- Continue independent AI quality evaluation only under the established protocol and approvals.
-- Obtain separate approval and independent security review before any real-family or public production release.
+<!-- DACODAC_AUTO_ROADMAP_BEGIN -->
+- Review the consolidated initial-write authorization for the restricted fictional staging pilot.
+- If authorized, complete hosted security and operational acceptance before any application testing.
+- Continue verifying school and activity integrations against approved access methods.
+<!-- DACODAC_AUTO_ROADMAP_END -->
+
+
 
 ## Release gates
 
