@@ -13,3 +13,9 @@ The owner accepted a time-limited container-risk exception for the fictional pil
 The disposable local PostgreSQL backend suite passed 1,203 tests, with 2 workstation-database-presence checks skipped. Two synthetic browser journeys also passed. These are local engineering results only; no live provider, hosted staging, or production acceptance is claimed.
 
 <!-- update-id: 2026-11-18-local-postgresql-and-browser-acceptance -->
+
+## 2026-11-19 — Local intake resilience checks expanded
+
+The disposable local PostgreSQL backend suite passed 1,206 tests, with 2 workstation-database-presence checks skipped. Local tests for intake checkpoint handling also passed. These are synthetic local engineering results; no live provider, hosted staging, or production acceptance is claimed.
+
+<!-- update-id: 2026-11-19-local-intake-resilience -->
