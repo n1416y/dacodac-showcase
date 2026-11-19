@@ -10,7 +10,7 @@
 
 **Result:** PASS — 1,206 passed, 0 failed, 2 skipped.
 
-**Additional checks:** 14 subtests passed; 43 warnings; 54.77 seconds. A separate local intake-checkpoint suite passed 11 tests; Ruff passed for the changed collector and focused tests.
+**Additional checks:** 14 subtests passed; 43 warnings; 54.77 seconds. A separate local intake-checkpoint suite passed 11 tests; Ruff passed for the changed collector and focused tests. The complete synthetic family browser journey passed 1 Playwright test.
 
 **Database and scope:** Disposable local PostgreSQL 16.15, bound to loopback with temporary storage. The two skips were workstation-database-presence checks; PostgreSQL-specific acceptance ran. This is local synthetic-data engineering evidence, not hosted staging or production acceptance.
 <!-- DACODAC_AUTO_TESTS_END -->
