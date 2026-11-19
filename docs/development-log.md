@@ -14,8 +14,8 @@ The disposable local PostgreSQL backend suite passed 1,203 tests, with 2 worksta
 
 <!-- update-id: 2026-11-18-local-postgresql-and-browser-acceptance -->
 
-## 2026-11-19 — Local intake and family browser checks refreshed
+## 2026-11-19 — I11 preparation and local acceptance refreshed
 
-The disposable local PostgreSQL backend suite passed 1,206 tests, with 2 workstation-database-presence checks skipped. Local intake-checkpoint tests passed, and the complete synthetic family browser journey passed again. These are local engineering results; no live provider, hosted staging, or production acceptance is claimed.
+The disposable local PostgreSQL backend suite passed 1,207 tests, with 2 workstation-database-presence checks skipped. The full synthetic family browser journey and local intake-checkpoint tests also passed. First-provider acceptance materials were refreshed; live provider access remains unapproved. These are local engineering results, not hosted staging or production acceptance.
 
 <!-- update-id: 2026-11-19-local-intake-resilience -->
