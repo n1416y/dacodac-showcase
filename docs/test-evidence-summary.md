@@ -8,9 +8,9 @@
 <!-- DACODAC_AUTO_TESTS_BEGIN -->
 **Evidence date:** 2026-11-19
 
-**Result:** PASS — 1,207 passed, 0 failed, 2 skipped.
+**Result:** PASS — 1,209 passed, 0 failed, 2 skipped.
 
-**Additional checks:** 14 subtests passed; 43 warnings; 52.41 seconds. The I11 profile/runner suite passed 30 tests, and the complete synthetic family browser journey passed 1 Playwright test. The focused local intake-checkpoint suite passed 11 tests; Ruff passed for changed files.
+**Additional checks:** 14 subtests passed; 43 warnings; 53.75 seconds. The I11 profile/runner suite passed 32 tests; the complete synthetic family browser journey passed 1 Playwright test. The focused local intake-checkpoint suite passed 11 tests; Ruff passed for the changed I11 and collector files.
 
 **Database and scope:** Disposable local PostgreSQL 16.15, bound to loopback with temporary storage. The two skips were workstation-database-presence checks; PostgreSQL-specific acceptance ran. This is local synthetic-data engineering evidence, not hosted staging or production acceptance.
 <!-- DACODAC_AUTO_TESTS_END -->
