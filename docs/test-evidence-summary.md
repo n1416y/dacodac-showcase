@@ -1,16 +1,16 @@
 # Sanitized local test evidence summary
 
-**Evidence date:** November 18, 2026  
+**Evidence date:** November 19, 2026  
 **Scope:** Synthetic/local engineering only; not hosted staging or production acceptance.
 
 ## Latest recorded backend run
 
 <!-- DACODAC_AUTO_TESTS_BEGIN -->
-**Evidence date:** 2026-11-18
+**Evidence date:** 2026-11-19
 
-**Result:** PASS — 1,203 passed, 0 failed, 2 skipped.
+**Result:** PASS — 1,206 passed, 0 failed, 2 skipped.
 
-**Additional checks:** 14 subtests passed; 43 warnings; 53.80 seconds.
+**Additional checks:** 14 subtests passed; 43 warnings; 54.77 seconds. A separate local intake-checkpoint suite passed 11 tests; Ruff passed for the changed collector and focused tests.
 
 **Database and scope:** Disposable local PostgreSQL 16.15, bound to loopback with temporary storage. The two skips were workstation-database-presence checks; PostgreSQL-specific acceptance ran. This is local synthetic-data engineering evidence, not hosted staging or production acceptance.
 <!-- DACODAC_AUTO_TESTS_END -->
@@ -18,7 +18,7 @@
 
 ## Earlier runs and reconciliation
 
-An earlier environment-limited run recorded 1,054 passed and 15 PostgreSQL-dependent skips. The prior public summary reported 1,069 passed and no skips; this newer November 18 result supersedes that summary. Earlier results remain historical and are not rewritten.
+An earlier environment-limited run recorded 1,054 passed and 15 PostgreSQL-dependent skips. The prior public summary reported 1,069 passed and no skips; this newer November 19 result supersedes that summary. Earlier results remain historical and are not rewritten.
 
 The two skips in the current run are workstation-database-presence checks. PostgreSQL-specific runtime-role, RLS, tenant-isolation and migration acceptance ran against the disposable local database. Hosted security and operational acceptance remains mandatory before public staging testing or any service is scaled above zero.
 
