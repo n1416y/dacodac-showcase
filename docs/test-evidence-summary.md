@@ -1,29 +1,29 @@
 # Sanitized local test evidence summary
 
-**Evidence date:** November 12, 2026  
+**Evidence date:** November 18, 2026  
 **Scope:** Synthetic/local engineering only; not hosted staging or production acceptance.
 
 ## Latest recorded backend run
 
 <!-- DACODAC_AUTO_TESTS_BEGIN -->
-**Evidence date:** 2026-11-12
+**Evidence date:** 2026-11-18
 
-**Result:** PASS — 1,069 passed, 0 failed, 0 skipped.
+**Result:** PASS — 1,203 passed, 0 failed, 2 skipped.
 
-**Additional checks:** 14 subtests passed; 2 deprecation warnings; 48.21 seconds.
+**Additional checks:** 14 subtests passed; 43 warnings; 53.80 seconds.
 
-**Database and scope:** Disposable local PostgreSQL with TLS; tenant and RLS guards checked. This is local synthetic-data engineering evidence, not hosted staging or production acceptance.
+**Database and scope:** Disposable local PostgreSQL 16.15, bound to loopback with temporary storage. The two skips were workstation-database-presence checks; PostgreSQL-specific acceptance ran. This is local synthetic-data engineering evidence, not hosted staging or production acceptance.
 <!-- DACODAC_AUTO_TESTS_END -->
 
 
-## Earlier run and reconciliation
+## Earlier runs and reconciliation
 
-An earlier full-suite run recorded 1,054 passed and 15 PostgreSQL-dependent skips because the required disposable PostgreSQL environment was not configured. The November 12 run above is the later rerun with that environment available and supersedes the earlier count for the complete local suite. The earlier result remains valid historical evidence of the incomplete run and has not been rewritten.
+An earlier environment-limited run recorded 1,054 passed and 15 PostgreSQL-dependent skips. The prior public summary reported 1,069 passed and no skips; this newer November 18 result supersedes that summary. Earlier results remain historical and are not rewritten.
 
-The skipped cases covered PostgreSQL runtime-role and RLS behavior, tenant context, projections, migration acceptance, and workspace governance. Hosted security and operational acceptance remains mandatory before any service is scaled above zero or public testing begins.
+The two skips in the current run are workstation-database-presence checks. PostgreSQL-specific runtime-role, RLS, tenant-isolation and migration acceptance ran against the disposable local database. Hosted security and operational acceptance remains mandatory before public staging testing or any service is scaled above zero.
 
 ## Other local checks
 
-The same checkpoint recorded frontend type checking and production build as passing, alongside container smoke checks, image secret scans, CloudFormation lint/Guard, and read-only AWS template validation. These checks do not establish that AWS application resources were deployed. The owner has accepted a limited container-risk exception for the fictional staging pilot only. No application resources are deployed; a fresh initial-write authorization is still pending. This is not remediation or production approval.
+A separate November 12 checkpoint recorded frontend type checking and production build, container smoke checks, image secret scans, CloudFormation lint/Guard, and read-only AWS template validation. Those checks do not establish that application resources were deployed. Current AWS application staging remains NO-GO; no application resources are deployed. This is not production approval.
 
 This summary is sanitized from the versioned engineering checkpoint. It intentionally omits local paths, credentials, account identifiers, infrastructure resource identifiers, and raw test logs.
