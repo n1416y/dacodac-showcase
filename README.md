@@ -27,7 +27,7 @@ The local application and its automated tests cover a meaningful set of family-p
 - The normalized domain separates source records, family items, evidence, review decisions, tasks, and audit history.
 - Review, task ownership, preparation checklists, event readiness, conflict display, and source attribution are represented in working application flows.
 - PostgreSQL migrations, tenant boundaries, runtime-role checks, and row-level-security behavior have been exercised against a disposable local PostgreSQL instance.
-- The latest recorded backend run, dated November 19, 2026, passed 1,207 tests, with 2 workstation-database-presence checks skipped; 14 subtests also passed. The complete synthetic family browser journey also passed on November 19. PostgreSQL-specific acceptance ran against disposable local PostgreSQL 16.15 on loopback. The earlier 1,054-pass, 15-skip run remains historical; neither result is hosted or production acceptance. See [the sanitized test evidence summary](docs/test-evidence-summary.md).
+- The latest recorded backend run, dated November 19, 2026, passed 1,209 tests, with 2 workstation-database-presence checks skipped; 14 subtests also passed. The complete synthetic family browser journey also passed on November 19. PostgreSQL-specific acceptance ran against disposable local PostgreSQL 16.15 on loopback. The earlier 1,054-pass, 15-skip run remains historical; neither result is hosted or production acceptance. See [the sanitized test evidence summary](docs/test-evidence-summary.md).
 
 These are local engineering results. They do not establish live provider acceptance, hosted staging acceptance, production reliability, or user adoption.
 
