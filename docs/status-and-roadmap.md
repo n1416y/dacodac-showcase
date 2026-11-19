@@ -1,7 +1,7 @@
 # Engineering status and roadmap
 
 <!-- DACODAC_AUTO_STATUS_BEGIN -->
-**As of 2026-11-13:** The owner accepted a limited container-risk exception for the fictional staging pilot. No application AWS resources are deployed. Review the consolidated initial-write authorization package.
+**As of 2026-11-18:** Local synthetic engineering continues. The latest disposable PostgreSQL backend suite passed 1,203 tests with 2 workstation-database-presence checks skipped, and two synthetic browser journeys passed. AWS application staging remains NO-GO; no application resources are deployed.
 <!-- DACODAC_AUTO_STATUS_END -->
 
 ## Implemented and locally tested
@@ -27,8 +27,8 @@
 ## Planned
 
 <!-- DACODAC_AUTO_ROADMAP_BEGIN -->
-- Review the consolidated initial-write authorization for the restricted fictional staging pilot.
-- If authorized, complete hosted security and operational acceptance before any application testing.
+- Keep AWS application staging NO-GO until the required security and operational gates are closed and a current owner decision is recorded.
+- Prepare the first local-only Google Calendar acceptance after the dedicated fictional account/calendar and explicit owner authorization are available.
 - Continue verifying school and activity integrations against approved access methods.
 <!-- DACODAC_AUTO_ROADMAP_END -->
 
