@@ -1,7 +1,7 @@
 # Engineering status and roadmap
 
 <!-- DACODAC_AUTO_STATUS_BEGIN -->
-**As of 2026-11-19:** Local synthetic engineering continues. The latest disposable PostgreSQL backend suite passed 1,206 tests with 2 workstation-database-presence checks skipped; two synthetic browser journeys were also verified on November 18. AWS application staging remains NO-GO; no application resources are deployed.
+**As of 2026-11-19:** Local synthetic engineering continues. The latest disposable PostgreSQL backend suite passed 1,206 tests with 2 workstation-database-presence checks skipped. The complete synthetic family browser journey also passed on November 19; a separate synthetic Canvas recovery journey passed on November 18. AWS application staging remains NO-GO; no application resources are deployed.
 <!-- DACODAC_AUTO_STATUS_END -->
 
 ## Implemented and locally tested
