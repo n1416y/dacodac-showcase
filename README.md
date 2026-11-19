@@ -27,7 +27,7 @@ The local application and its automated tests cover a meaningful set of family-p
 - The normalized domain separates source records, family items, evidence, review decisions, tasks, and audit history.
 - Review, task ownership, preparation checklists, event readiness, conflict display, and source attribution are represented in working application flows.
 - PostgreSQL migrations, tenant boundaries, runtime-role checks, and row-level-security behavior have been exercised against a disposable local PostgreSQL instance.
-- The latest recorded backend run, dated November 12, 2026, passed 1,069 tests with no failures or skips; frontend type and production-build checks passed. The earlier run had 1,054 passes and 15 PostgreSQL-dependent skips. The later run used a disposable local PostgreSQL 16.15 instance with TLS; neither result is hosted or production acceptance. See [the sanitized test evidence summary](docs/test-evidence-summary.md).
+- The latest recorded backend run, dated November 18, 2026, passed 1,203 tests, with 2 workstation-database-presence checks skipped; 14 subtests also passed. PostgreSQL-specific acceptance ran against disposable local PostgreSQL 16.15 on loopback. The earlier 1,054-pass, 15-skip run remains historical; neither result is hosted or production acceptance. See [the sanitized test evidence summary](docs/test-evidence-summary.md).
 
 These are local engineering results. They do not establish live provider acceptance, hosted staging acceptance, production reliability, or user adoption.
 
@@ -39,7 +39,7 @@ These are local engineering results. They do not establish live provider accepta
 | Database tenant isolation | Tested locally with PostgreSQL; hosted acceptance remains pending |
 | Source adapters | Partial; provider access varies and real family accounts have not been validated |
 | AI prioritization and disruption mitigation | Research/prototype work only; production AI is disabled |
-| AWS application staging | <!-- DACODAC_AUTO_README_BEGIN --> Not deployed; limited risk exception accepted for fictional staging; initial-write authorization pending. <!-- DACODAC_AUTO_README_END --> |
+| AWS application staging | <!-- DACODAC_AUTO_README_BEGIN --> Not deployed; AWS application staging remains NO-GO. <!-- DACODAC_AUTO_README_END --> |
 | Real-family enrollment | Closed |
 | Public production release | Not authorized |
 
